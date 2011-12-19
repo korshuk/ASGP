@@ -1,0 +1,1282 @@
+@charset "utf-8";
+/* CSS Document */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1.3;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html, body {
+	margin:0;
+	padding:0;
+	width:100%;
+	height:100%;
+}
+
+b, strong {
+	font-weight: bold;
+}
+
+body {
+	background-color: #F1F1F1;
+	min-width: 920px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #555555;
+}
+
+#header-wrapper {
+	height: 94px;
+	width: 100%;
+	background-image: url(../images/rule.png);
+	background-repeat: repeat-x;
+	background-position: center top;
+}
+
+#header {
+	height: 93px;
+	width: 920px;
+	border-bottom: 1px solid #D5D5D5;
+	margin: 0px auto;
+}
+
+#header-no-border {
+	height: 93px;
+	width: 920px;
+	margin: 0px auto;
+}
+
+#logo {
+	margin-left: 5px;
+	display: block;
+	margin-left: 10px;
+	float: left;
+	height: 57px;
+	width: 171px;
+}
+
+#slogan {
+	display: block;
+	float: left;
+	height: 20px;
+	width: 108px;
+	margin-top: 40px;
+	margin-left: 25px;
+}
+
+#menu {
+	margin-left: 70px;
+    padding-top: 38px;
+	float: left;
+}
+
+#menu li {
+	display: block;
+	float: left;
+	margin-left: 7px;
+	font-size: 12px;
+	font-weight: bold;
+	color: #141414;
+	text-transform: uppercase;
+	height: 25px;
+}
+
+#menu li a {
+	color: #141414;
+	text-decoration: none;
+	display: block;
+	height: 19px;
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-top: 6px;
+	text-shadow: 0px 1px 0px #FFF;
+}
+
+#menu li a:hover {
+	color: #ffffff;
+	background-color: #C7C7C7;
+	text-shadow: none;
+}
+
+#menu li a.current {
+	color: #FFF;
+	background-color: #000000;
+	text-shadow: none;
+}
+
+#lang {
+	float: right;
+	padding-top: 42px;
+}
+
+#lang a {
+	font-size: 11px;
+	color: #141414;
+	text-shadow: 0px 1px 0px #FFF;
+	text-decoration: none;
+	border-bottom: 1px dotted #141414;
+}
+
+#lang a:hover {
+	text-decoration: none;
+	border-bottom: none;
+}
+
+#wrapper {
+	position:relative;
+	min-height:100%;
+	height:auto !important;
+	height:100%;
+	overflow: hidden;
+}
+
+#container {
+	width: 920px;
+	margin: 0px auto;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #fbfbfb;
+}
+
+.container-no-border {
+	width: 920px;
+	margin: 0px auto;
+	padding-bottom: 30px;
+}
+
+#container-fullwidth {
+	width: 100%;
+	overflow: hidden;
+	margin-bottom: 25px;
+}
+
+.index-vacancy {
+	background-image: url(../images/vacancy.png);
+	height: 37px;
+	width: 1200px;
+	margin: 0px auto;
+	font-size: 22px;
+	color: #ffffff;
+	text-align: center;
+	padding-top: 3px;
+	position: relative;
+	top: 1px;
+	z-index: 9999;
+}
+
+.index-vacancy a {
+	position: absolute;
+	right: 140px;
+	top: 10px;
+	color: #fff;
+	text-decoration: none;
+	border-bottom: 1px dotted #fff;
+	font-size: 11px;
+	text-shadow: 0 -1px 0 #666;
+}
+
+
+/*  Common Scrollable Rules  */
+
+.scrollable {
+	position: relative;
+	width: 1200px;
+	height: 600px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	overflow: visible;
+}
+
+.scrollable .items {
+	width:20000em;
+	position:absolute;
+}
+
+.scrollable .items .item {
+	float:left;
+	position: relative;
+	height: 600px;
+	width: 1200px;
+}
+
+.scrollable .items .item img {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+} 
+
+.scrollable .items .item .scrollable-item-content {
+	
+	background-attachment: scroll;
+	background-repeat: repeat-x;
+	position: absolute;
+	height: 600px;
+	width: 1200px;
+	left: 0px;
+	top: 0px;
+	background-position: center center;
+	display: none;
+}
+
+.scrollable .items .item .project-left {
+	width: 580px;
+	float: left;
+}
+
+.scrollable .items .item .project-type-switcher {
+	margin-top: 40px;
+}
+
+.scrollable .items .item .project-type-switcher li {
+	float: left;
+	height: 20px;
+	padding-right: 15px;
+	padding-left: 15px;
+	background-color: #9e9e9e;
+	font-size: 12px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #ffffff;
+	padding-top: 5px;
+}
+
+.scrollable .items .item .project-type-switcher a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.scrollable .items .item .scrollable-item-title {
+	font-size: 32px;
+	width: 550px;
+	margin-top: 350px;
+	background: none;
+	opacity: 0.9;
+
+}
+
+.scrollable .items .item .scrollable-item-title a {
+	text-decoration: none;
+	padding: 0px 10px 7px 10px;
+	line-height: 50px;
+	
+}
+
+.scrollable .items .item .scrollable-item-title a:hover {}
+
+.scrollable .items .item .scrollable-item-description {
+	background-repeat: repeat-x;
+	width: 245px;
+	float: right;
+	padding-top: 20px;
+	padding-right: 25px;
+	padding-bottom: 22px;
+	padding-left: 25px;
+	margin-top: 40px;
+	position: relative;
+}
+
+.scrollable .items .item .scrollable-item-description h3 {
+	font-size: 10px;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-bottom: 5px;
+	
+}
+
+.scrollable .items .item .scrollable-item-description p {
+	font-size: 11px;
+	margin-bottom: 10px;
+}
+
+.scrollable .items .item .scrollable-item-description .more-link {
+	font-size: 11px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.scrollable .items .item .scrollable-item-description .more-link:hover {
+	text-decoration: none;
+}
+
+.scrollable .items .item .scrollable-item-description .hide {
+	height: 26px;
+	width: 52px;
+	position: absolute;
+	right: 0;
+    top: 0;
+}
+
+/*     White Theme    */
+
+.scrollable .items .item .white-theme {
+	background-image: url(../images/index-scrollable-overlay.png);
+}
+
+.scrollable .items .item .white-theme .project-type-switcher li.active {
+	background-color: #FFF;
+	color: #000;
+}
+
+.scrollable .items .item .white-theme .scrollable-item-title {
+	color: #141414;
+}
+
+.scrollable .items .item .white-theme .scrollable-item-title a {
+	background-color: #ffffff;
+	color: #141414;
+}
+
+.scrollable .items .item .white-theme .scrollable-item-description {
+	background-image: url(../images/descr-bg.png);
+}
+
+.scrollable .items .item .white-theme .scrollable-item-description h3 {
+	color: #141414;
+}
+
+.scrollable .items .item .white-theme .scrollable-item-description .more-link {
+	color: #141414;
+}
+
+.scrollable .items .item .white-theme .scrollable-item-description .hide {
+	background-image: url(../images/descr-marker.png);
+}
+
+/*     Black Theme    */
+
+.scrollable .items .item .black-theme {
+	background-image: url(../images/index-scrollable-overlay-dark.png);
+}
+
+.scrollable .items .item .black-theme .project-type-switcher li.active {
+	background-color: #000;
+}
+
+.scrollable .items .item .black-theme .scrollable-item-title {
+	color: #FFF;
+}
+
+.scrollable .items .item .black-theme .scrollable-item-title a {
+	background-color: #060606;
+	color: #FFF;
+}
+
+.scrollable .items .item .black-theme .scrollable-item-description {
+	background-image: url(../images/descr-bg-dark.png);
+}
+
+.scrollable .items .item .black-theme .scrollable-item-description h3 {
+	color: #fff;
+}
+
+.scrollable .items .item .black-theme .scrollable-item-description p {
+	color: #919191;
+}
+
+.scrollable .items .item .black-theme .scrollable-item-description .more-link {
+	color: #fff;
+}
+
+.scrollable .items .item .black-theme .scrollable-item-description .hide {
+	background-image: url(../images/descr-marker-dark.png);
+}
+
+/*  Scrollable Ends  */
+
+.scrollable-dots-left, .scrollable-dots-right {
+	width: 1200px;
+	height: 600px;
+	position: absolute;
+	background-image: url(../images/scrollable-bg.png);
+	background-repeat: repeat;
+	background-attachment:fixed;
+}
+
+.scrollable-dots-left {
+	right: 1200px;
+	display: none;
+}
+
+.scrollable-dots-right {
+	left: 1200px;
+}
+
+/*  Scrollable Navigation Common Rules   */
+
+.navigation {
+	width: 920px;
+	height: 52px;
+	margin: 0px auto;
+	position: relative;
+	z-index: 999999;
+	top: -25px;
+}
+
+.navigation .less, .navigation .more{
+	display: block;
+	height: 51px;
+	width: 35px;
+	cursor: pointer;
+	position: relative;
+	border-bottom: 1px solid #cdcdcd;
+	background-image:url(../images/navi-sprite.png);
+	outline: none;
+}
+
+.navigation .less {
+	top: 2px;
+	left: 0px;
+	background-position: left top;
+}
+
+.navigation .more {
+	top: -50px;
+	left: 885px;
+	background-position: right top;
+}
+
+.navigation .less:hover {
+	background-position: left bottom;
+}
+
+.navigation .more:hover {
+	background-position: right bottom;
+}
+
+.navigation .navigation-scrollable {
+	width: 850px;
+	height: 52px;
+    position: relative;
+  	overflow: hidden;
+	top: -102px;
+	left: 35px;
+	
+}
+
+.navigation .navigation-scrollable .navi-gradient-left, .navigation .navigation-scrollable .navi-gradient-right {
+	width: 34px;
+	height: 51px;
+	background-image: url(../images/navi-gradients-sprite.png);
+	position: absolute;
+	z-index: 9999999;
+}
+
+.navigation .navigation-scrollable .navi-gradient-left {
+	top: 0px;
+	left: 0px;
+}
+
+.navigation .navigation-scrollable .navi-gradient-right {
+	top: 0px;
+	right: 0px;
+}
+
+.navigation .navigation-scrollable #navi {
+	position: absolute;
+	width: 20000em;
+	height: 52px;
+}
+
+.navigation .navigation-scrollable #navi div {
+	float: left;
+	position: relative;
+	height: 51px;
+	width: 83px;
+}
+
+.navigation .navigation-scrollable #navi div.active {
+	border-bottom: 1px solid #cdcdcd;
+}
+
+.navigation .navigation-scrollable #navi div.hover {
+	border-bottom: 1px solid #cdcdcd;
+}
+
+.navigation .navigation-scrollable #navi div img {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 1;
+	display: block;
+	height: 51px;
+	width: 83px;
+}
+
+.navigation .navigation-scrollable #navi div a {
+	position: relative;
+	height: 51px;
+	width: 83px;
+	display: block;
+	z-index: 2;
+	top: 0px;
+	left: 0px;
+	background-image: url(../images/lightbox-blank.gif);
+	background-repeat: repeat;
+	outline: none;
+}
+
+.navigation .navigation-scrollable #navi div a:hover, .navigation .navigation-scrollable #navi div.active a  {
+	height: 43px;
+	width: 75px;
+}
+
+/*   Scrollable Navigation White Theme   */
+
+.navigation-white {}
+
+.navigation-white .less {
+	background-position: left top;
+}
+
+.navigation-white .more {
+	background-position: right top;
+}
+
+.navigation-white .navi-gradient-left {
+	background-position: left bottom;
+}
+
+.navigation-white .navi-gradient-right {
+	background-position: right bottom;
+}
+
+.navigation-white .navigation-scrollable #navi div a:hover, .navigation-white .navigation-scrollable #navi div.active a  {
+	border: 4px solid #ffffff;
+}
+
+/*   Scrollable Navigation Black Theme   */
+
+.navigation-black {}
+
+.navigation-black .less {
+	background-position: left -51px;
+}
+
+.navigation-black .more {
+	background-position: right -51px;
+}
+
+.navigation-black .navi-gradient-left {
+	background-position: left top;
+}
+
+.navigation-black .navi-gradient-right {
+	background-position: right top;
+}
+
+.navigation-black .navigation-scrollable #navi div a:hover, .navigation-black .navigation-scrollable #navi div.active a  {
+	border: 4px solid #000000;
+}
+
+/*  Scrollable Navigation Ends */
+
+/*  Project Scrollable Navigation Begins */
+
+.project-scrollable {
+	position: relative;
+	width: 600px;
+	height: 450px;
+	overflow: visible;
+	float: left;
+}
+
+.project-scrollable .items {
+	width:20000em;
+	position:absolute;
+}
+
+.project-scrollable .items .item {
+	float:left;
+	position: relative;
+	height: 450px;
+	width: 600px;
+}
+
+.project-scrollable .items .item img {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+} 
+
+.project-scrollable .project-picture-overlay {
+	background-image: url(../images/index-scrollable-overlay.png);
+	background-attachment: scroll;
+	background-repeat: repeat-x;
+	position: absolute;
+	height: 450px;
+	width: 600px;
+	left: 0px;
+	top: 0px;
+	background-position: center center;
+}
+
+
+.project-navigation {
+	width: 920px;
+	height: 52px;
+	margin: 0px auto;
+	z-index: 999999;
+}
+
+.project-navigation .less, .navigation .more{
+	display: block;
+	height: 51px;
+	width: 35px;
+	cursor: pointer;
+	position: relative;
+}
+
+.project-navigation .less {
+	top: 0px;
+	left: 0px;
+}
+
+.project-navigation .more {
+	top: -51px;
+	left: 885px;
+}
+
+project-.navigation .project-navigation-scrollable {
+	width: 600px;
+	height: 52px;
+    position: relative;
+  	overflow: hidden;
+
+}
+
+.project-navigation .project-navigation-scrollable #navi {
+	position: absolute;
+	width: 20000em;
+}
+
+.project-navigation .project-navigation-scrollable #navi div {
+	float: left;
+	position: relative;
+	height: 51px;
+	width: 63px;
+}
+
+.project-navigation .project-navigation-scrollable #navi div.active {
+	border-bottom: 1px solid #cdcdcd;
+}
+
+.project-navigation .project-navigation-scrollable #navi div.hover {
+	border-bottom: 1px solid #cdcdcd;
+}
+
+.project-navigation .project-navigation-scrollable #navi div img {
+	position: absolute;
+	cursor: pointer;
+}
+
+.project-navigation .project-navigation-scrollable #navi div a {
+	position: absolute;
+	height: 51px;
+	width: 63px;
+	display: block;
+	z-index: 9999;
+}
+
+.project-navigation .project-navigation-scrollable #navi div a:hover, .project-navigation .project-navigation-scrollable #navi div.active a  {
+	height: 43px;
+	width: 55px;
+	border: 4px solid #ffffff;
+}
+
+.project-scrollable-dots-left, .project-scrollable-dots-right {
+	height: 450px;
+	width: 1200px;
+	position: absolute;
+	background-image: url(../images/scrollable-bg.png);
+	background-repeat: repeat;
+	background-attachment:fixed;
+}
+
+.project-scrollable-dots-left {
+	right: 600px;
+	display: none;
+}
+
+.project-scrollable-dots-right {
+	left: 600px;
+}
+
+
+/*  Project Scrollable Navigation Ends */
+
+
+.project-description {
+	float: left;
+	width: 305px;
+	position: relative;
+	padding-top: 40px;
+	padding-left: 15px;
+}
+
+.project-description-text {
+	width: 600px;
+	margin-top: 45px;
+} 
+
+.project-description-text h2 {
+	font-size: 12px;
+	font-weight: bold;
+	color: #141414;
+	text-transform: uppercase;
+	text-shadow: 0px 1px 0px #FFF;
+	margin-bottom: 20px;
+}
+
+.default-table {
+	font-size: 12px;
+	color: #555555;
+	width: 100%;
+}
+
+.default-table tr {
+
+}
+
+.default-table .header {
+	font-size: 10px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #141414;
+}
+
+.default-table .ff {
+	background-color: #fafafa;
+}
+
+.default-table tr td {
+	padding: 7px;
+}
+
+#breadcrumb {
+	font-size: 11px;
+	color: #8e8e8e;
+	margin-top: 25px;
+	margin-bottom: 40px;
+}
+
+#breadcrumb a {
+	color: #8e8e8e;
+	text-decoration: underline;
+}
+
+#breadcrumb a:hover {
+	text-decoration: none;
+}
+
+#content {
+	float: left;
+	width: 600px;
+	margin-right: 50px;
+}
+
+#content a {
+	color: #141414;
+}
+
+#content a:hover {
+	text-decoration: none;
+}
+
+h1 {
+	font-size: 36px;
+	color: #141414;
+	margin-bottom: 40px;
+	width: 600px;
+	margin-right: 50px;
+	float: left;
+	line-height: 42px;
+}
+
+#content .article-image {
+	margin-bottom: 35px;
+	
+}
+
+#content .text, .project-description-text .text {
+	margin-bottom: 20px;
+}
+
+#content .lightbox-image {
+	margin-right: 30px;
+	margin-bottom: 20px;
+	position: relative;
+
+}
+
+#content .lightbox-image img {
+	/*position: absolute;*/
+	left: 0px;
+	top: 0px;
+}
+
+#content .lightbox-image .lightbox-link {
+	height: 42px;
+    right: 15px;
+    position: absolute;
+    bottom: 15px;
+    width: 42px;
+}
+
+#content .article-meta {
+	font-size: 12px;
+	color: #555555;
+	margin-bottom: 50px;
+	padding-top: 20px;
+}
+
+#content .articles-list {
+	padding-top: 10px;
+}
+
+#content .articles-list li {
+	padding-left: 35px;
+	padding-bottom: 20px;
+}
+
+#content .articles-list li.hover {
+	background-image: url(../images/marker-forward.png);
+	background-position: left top;
+	background-repeat: no-repeat;
+	
+}
+
+.articles-list li img {
+	float: left;
+	width: 68px;
+	height: 51px;
+	margin-right: 20px;
+}
+
+#content .articles-list li a {
+	font-size: 12px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #141414;
+	text-decoration: underline;
+}
+
+#content .articles-list li a:hover {
+	text-decoration: none;	
+}
+
+#content .articles-list li .meta {
+	font-size: 12px;
+	margin-top: 5px;
+	color: #555555;
+	overflow: hidden;
+}
+
+.projects li {
+	margin-bottom: 10px;
+}
+
+#content .paging {
+	font-size: 13px;
+	margin-left: 35px;
+	margin-bottom: 35px;
+    margin-top: 25px;
+}
+
+#content .paging a {
+	display: inline-block;
+	color: #8e8e8e;
+	height: 21px;
+	margin-right: 3px;
+	padding: 5px 7px 3px;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+#content .paging a:hover {
+	text-decoration: none;
+	background-color: #9E9E9E;
+	color: #ffffff;
+}
+
+#content .paging a.current {
+	color: #ffffff;
+	background-color: #000000;
+}
+
+#content .paging a.paging-back, #content .paging a.paging-forward {
+	padding: 0px;
+	width: 20px;
+	height: 29px;
+	display: inline-block;
+	position: relative;
+    top: -6px;
+	text-decoration: none;
+}
+
+#content .paging a.paging-back {
+	background-image:url(../images/marker-back.png)
+}
+
+#content .paging a.paging-forward {
+	background-image:url(../images/marker-forward.png)
+}
+
+.index-title {
+	font-size: 12px;
+	font-weight: bold;
+	color: #141414;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+	background-image: url(../images/heading-bg.png);
+	background-repeat: repeat-x;
+ 	background-position: left 3px;;
+	text-shadow: 0px 1px 0px #FFF;
+}
+
+.index-title p {
+	background-color: #f1f1f1;
+	padding-right: 10px;
+	display: inline-block;
+}
+
+.index-articles-list {}
+
+.index-articles-list li {
+	width: 265px;
+	float: left;
+	font-weight: normal;
+	color: #141414;
+	margin-bottom: 15px;
+	padding-left: 35px;
+}
+
+.index-articles-list li a {
+	font-size: 13px;
+	color: #141414;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.index-articles-list li .meta {
+	font-size: 12px;
+	margin-top: 10px;
+	color: #555555
+}
+
+.index-articles-list li .date {
+	font-size: 11px;
+	margin-top: 10px;
+	color: #141414
+}
+
+#sidebar {
+	float: left;
+	width: 270px;
+}
+
+#sidebar h2, .project-description h2 {
+	font-size: 12px;
+	font-weight: bold;
+	color: #141414;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+	text-shadow: 0px 1px 0px #FFF;
+}
+
+#sidebar h2.marg, #content h2.marg, .project-description h2.marg {
+	margin-left: 35px;
+}
+
+#sidebar .articles-list {
+	
+}
+
+#sidebar .articles-list li, .project-description .articles-list li {
+	font-size: 12px;
+	font-weight: normal;
+	color: #141414;
+	padding-bottom: 15px;
+}
+
+#sidebar .marker li, .project-description .articles-list li {
+	padding-left: 35px;
+}
+
+#sidebar .articles-list li.hover, .index-articles-list li.hover  {
+	background-image: url(../images/marker-forward.png);
+	background-position: left top;
+	background-repeat: no-repeat;
+	
+}
+
+#sidebar .articles-list li a, #sidebar .articles-list li span, .project-description .articles-list li span {
+	color: #141414;
+	text-decoration: none;
+	font-weight: bold;
+	
+}
+
+#sidebar .articles-list li .meta, .project-description .articles-list li .meta {
+	font-size: 11px;
+	margin-top: 5px;
+	color: #555555;
+	font-weight: normal;
+}
+
+#sidebar .articles-list li .meta a, .project-description .articles-list li .meta a {
+	color: #141414;
+	font-weight: normal;
+}
+
+#sidebar .articles-list li .meta a:hover, .project-description .articles-list li .meta a:hover {
+	text-decoration: none;
+}
+
+
+#sidebar .filters {
+	background-color: #fcfcfc;
+	padding-top: 25px;
+	padding-right: 30px;
+	padding-bottom: 12px;
+	padding-left: 30px;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #ffffff;
+	border-right-color: #ffffff;
+	border-bottom-color: #CDCDCD;
+	border-left-color: #ffffff;
+}
+
+#sidebar .filters h2 {
+	margin-bottom: 15px;
+}
+
+#sidebar .filters ul {
+	margin-bottom: 15px;
+}
+
+#sidebar .filters ul li {
+	font-size: 12px;
+	height: 18px;
+	padding-top: 2px;
+	padding-right: 7px;
+	padding-left: 7px;
+	display: inline-block;
+	color: #FFF;
+	margin-bottom: 3px;
+}
+
+#sidebar .filters ul li.active {
+	background-color: #B6B6B6;
+}
+
+#sidebar .filters ul li a {
+	color: #555555;
+	text-decoration: none;
+	border-bottom: 1px dotted #555555;
+}
+
+#sidebar .filters ul li a:hover {
+	border-bottom: none;
+}
+
+.addthis_toolbox {
+	width: 235px;
+	float: right;
+	margin-top: 20px;
+}
+
+#footer-wrapper {
+	background-image: url(../images/footer.png);
+	background-repeat: repeat-x;
+	background-position: center top;
+	background-color: #FFF;
+	height: 100px;
+	width: 100%;
+	position:relative; 
+	margin-top:-100px;
+}
+
+.empty {height:100px; }
+
+#footer {
+	width: 920px;
+	margin: 0px auto;
+	font-size: 11px;
+	color: #555555
+}
+
+#footer #copyright {
+	float: left;
+	margin-top: 45px;
+}
+
+#footer #footer-menu {
+	float: left;
+	margin-top: 45px;
+	margin-left: 90px;
+}
+
+#footer #footer-menu li {
+	display: inline;
+	margin-right: 10px;
+}
+
+#footer #footer-menu a {
+	color: #555555;
+}
+
+#footer #footer-menu a:hover {
+	text-decoration: none;
+	
+}
+
+#footer #search {
+	float: right;
+	margin-top: 40px;
+}
+
+#footer #search #search-form {}
+
+#footer #search #search-form input[type=text] {
+	background-image: url(../images/search.png);
+	height: 22px;
+	width: 234px;
+	border: none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #b2b2b2;
+	padding-top: 0px;
+	padding-right: 3px;
+	padding-bottom: 0px;
+	padding-left: 6px;
+}
+
+input[type=text]:focus, .contacts #contact-form textarea:focus {
+	color: #555;
+}
+
+.contacts {
+	margin-bottom: 50px;
+}
+
+.contacts #contact-form input[type=text] {
+	background-image: url(../images/input.png);
+	height: 22px;
+	width: 260px;
+	border: none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #b2b2b2;
+	padding-top: 0px;
+	padding-right: 3px;
+	padding-bottom: 0px;
+	padding-left: 6px;
+	margin-bottom: 15px;
+}
+
+.contacts #contact-form textarea {
+	resize: none;
+	background-image:url(../images/textarea.png);
+	border: none;
+	width: 257px;
+	height: 95px;
+	padding-top: 3px;
+	padding-right: 6px;
+	padding-bottom: 3px;
+	padding-left: 6px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #b2b2b2;
+	margin-bottom: 12px;
+}
+
+.contacts #contact-form input[type=submit]  {
+	border: none;
+	border-bottom: 1px solid #cdcdcd;
+	background-color: #fff;
+	color: #141414;
+	font-weight: bold;
+	font-size: 11px;
+	text-transform: uppercase;
+	height: 25px;
+	width: 95px;
+	cursor: pointer;
+}
+
+.contacts #contact-form .error {
+	font-size: 10px;
+	color: #ff0000;
+}
+
+#footer #search #search-form input[type=image] {
+	margin-left: 10px;
+}
+
+.float-left {float: left;}
+
+.float-right {float: right;}
+
+.marg50 {margin-bottom: 50px;}
+
+.vacancy-list {
+	font-weight: bold;
+	list-style-type: disc;
+	margin-bottom: 30px;
+	font-size: 12px;
+	color: #141414;
+}
+
+.vacancy-list li {
+	margin-bottom: 14px;
+}
+
+.clear {clear: both;}
